@@ -293,7 +293,7 @@ Before running the automation, ensure:
 Each script includes:
 
 - `terminate_other_tv_automation()`  
-  → Ensures only 1–2 instances of the same `.exe` are running  
+  → Ensures only 1 instances of the same `.exe` are running  
   → Terminates older processes  
 
 - `terminate_if_running(process_name)`  
