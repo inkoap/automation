@@ -34,7 +34,11 @@ automation-folder/
 ├── webex-automation.exe 
 ├── zoom-automation.exe 
 ├── encrypted_credentials.txt 🔒 Encrypted email & password 
-├── encryption_key.key 🔑 Key for decryption
+├── encryption_key.key 🔑 Key for decryption 
+├── encrypted_credentials_teams.txt 🔒 Encrypted email & password Teams
+├── encryption_key_teams.key 🔑 Key for decryption Teams
+├── encrypted_credentials_zoom.txt 🔒 Encrypted email & password Teams
+├── encryption_key_zoom.key 🔑 Key for decryption Teams
 
 
 ---
