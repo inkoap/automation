@@ -127,8 +127,12 @@ class ZoomAutomation:
             options.add_argument("--disable-software-rasterizer")  # 🔹 Fix WebGL GPU crash
             options.add_argument("--disable-features=IsolateOrigins,site-per-process")  # Improve performance
             options.add_experimental_option("detach", True)
-            # Login default Chrome profile
-            user_data_dir = os.path.join(os.environ["LOCALAPPDATA"], "Google", "Chrome", "User Data")
+            options.add_argument("--remote-debugging-port=9222")
+            # options.add_argument("--disable-dev-shm-usage")
+
+            # # Login default Chrome profile
+            user_data_dir = os.path.join(os.environ["LOCALAPPDATA"], "Google", "Chrome", "User Data", "Default")
+            print(f"User data directory: {user_data_dir}")
             options.add_argument(f"--user-data-dir={user_data_dir}")
             options.add_argument("--profile-directory=Default")
 
